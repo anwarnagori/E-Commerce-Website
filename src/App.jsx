@@ -1,11 +1,12 @@
 import React from "react";
 import { Button } from "react-bootstrap";
+import Header from "./components/Header";
 
 const App = () => {
   return (
-    <div>
-      <h1>Adopt me!</h1>
-    </div>
+    <>
+      <Header />
+    </>
   );
 };
 
