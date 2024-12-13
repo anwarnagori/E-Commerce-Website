@@ -7,7 +7,7 @@ const Header = () => {
     <>
       <div className="header">
         <div className="icon">
-          <img height={100} width={220} src={Icon} alt="icon-1" />
+          <img height={90} width={210} src={Icon} alt="icon-1" />
         </div>
         <nav>
           <ul>
@@ -18,8 +18,8 @@ const Header = () => {
           </ul>
         </nav>
         <div className="btns">
-          <button>Sign-Up</button>
-          <button>Log-in</button>
+          <button className="sign-in">Sign-Up</button>
+          <button className="log-in">Log-in</button>
         </div>
       </div>
     </>
