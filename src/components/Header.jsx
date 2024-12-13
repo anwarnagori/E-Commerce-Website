@@ -17,6 +17,10 @@ const Header = () => {
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
+        <div className="btns">
+          <button>Sign-Up</button>
+          <button>Log-in</button>
+        </div>
       </div>
     </>
   );
