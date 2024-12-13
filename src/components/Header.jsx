@@ -1,15 +1,23 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "../pages/Home";
+import Icon from "../../assets/images/icon.png";
+
 
 const Header = () => {
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </BrowserRouter>
+      <div className="header">
+        <div className="icon">
+          <img height={100} width={220} src={Icon} alt="icon-1" />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Info</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </>
   );
 };
