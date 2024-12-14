@@ -7,7 +7,7 @@
     display: flex;
     align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #c5b5965f;
+    background-color: #efe4cf;
     border-bottom: 3px solid #000000;
 }
 .header .icon{
@@ -55,4 +55,11 @@ nav a{
     cursor: pointer;
     height: 45px;
     width: 110px;
+}
+.container{
+    height: 530px;
+}
+.container img {
+    height: 534px;
+    width: 1365px;
 }

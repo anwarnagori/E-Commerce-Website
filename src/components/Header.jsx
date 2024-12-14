@@ -7,7 +7,7 @@ const Header = () => {
     <>
       <div className="header">
         <div className="icon">
-          <img height={90} width={210} src={Icon} alt="icon-1" />
+          <img height={90} width={210} src={Icon} alt="icon" />
         </div>
         <nav>
           <ul>
