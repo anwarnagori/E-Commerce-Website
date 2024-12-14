@@ -7,8 +7,8 @@
     display: flex;
     align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #d2d1cf;
-    border-bottom: 2px solid black;
+    background-color: #c5b5965f;
+    border-bottom: 3px solid #000000;
 }
 .header .icon{
     margin-left: 10px;
@@ -40,12 +40,16 @@ nav a{
     height: 40px;
     width: 105px;
     border-radius: 10px;
+    border: none;
     background-color: #fff;
     font-size: 14px;
     font-weight: bold;
 }
 .btns .sign-in{
-    background-color: #f0f8ff;
+    background-color: #deeefc;
+}
+.btns .log-in{
+    background-color: #f57373;
 }
 .btns button:hover{
     cursor: pointer;
