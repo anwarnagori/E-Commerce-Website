@@ -1,13 +1,13 @@
-import React from 'react';import Image from "../../assets/images/background.jpg";
+import React from "react";
+
 const Section1 = () => {
-    
   return (
-    <div className='container'>
-      <div className="banner">
-      <img src={Image} alt="background" />
+    <div className="container">
+      <div className="heading">
+        <h1>MY FIRST E-COMMERCE PROJECT</h1>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Section1;
