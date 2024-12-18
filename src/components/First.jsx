@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 function First() {
   const [products, setProducts] = useState([]);
@@ -6,7 +6,7 @@ function First() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('https://dummyjson.com/products')
+    fetch("https://dummyjson.com/products")
       .then((response) => response.json())
       .then((data) => {
         setProducts(data.products);
@@ -32,7 +32,9 @@ function First() {
             <h3>{product.brand}</h3>
             <h3>{product.category}</h3>
             {/* <p>{product.description}</p> */}
-            <p><strong>Price: </strong>${product.price}</p>
+            <p>
+              <strong>Price: </strong>${product.price}
+            </p>
           </div>
         ))}
       </div>
