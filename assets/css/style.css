@@ -1,34 +1,46 @@
-*{
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
 }
-.header{
+
+/* Header styles */
+.header {
     height: 100px;
     display: flex;
     align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #efe4cf;
     border-bottom: 3px solid #000000;
+    flex-direction: row;
+    /* Default layout for larger screens */
 }
-.header .icon{
+
+.header .icon {
     margin-left: 10px;
     margin-bottom: 30px;
 }
-.header nav{
+
+.header nav {
     margin: 0 auto;
 }
-.header nav ul{
+
+/* Navigation styling */
+.header nav ul {
     width: 500px;
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
 }
-nav a{
+
+nav a {
     color: black;
     font-size: 20px;
     text-decoration: none;
 }
-.btns{
+
+/* Button Container styling */
+.btns {
     height: 50px;
     width: 225px;
     margin-right: 30px;
@@ -36,7 +48,9 @@ nav a{
     justify-content: space-between;
     align-items: center;
 }
-.btns button{
+
+/* Individual Buttons */
+.btns button {
     height: 40px;
     width: 105px;
     border-radius: 10px;
@@ -45,48 +59,168 @@ nav a{
     font-size: 14px;
     font-weight: bold;
 }
-.btns .sign-in{
+
+.btns .sign-in {
     background-color: #deeefc;
 }
-.btns .log-in{
+
+.btns .log-in {
     background-color: #f57373;
 }
-.btns button:hover{
+
+/* Hover effect */
+.btns button:hover {
     cursor: pointer;
     height: 45px;
     width: 110px;
 }
-.App {
+
+/* MEDIA QUERIES for RESPONSIVENESS */
+
+/* For Tablets and Smaller Devices */
+@media (max-width: 1024px) {
+    .header {
+        height: 80px;
+        flex-direction: column;
+        /* Stack elements vertically */
+        justify-content: center;
+    }
+
+    .header nav ul {
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btns {
+        width: 100%;
+        margin-right: 0;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .btns button {
+        width: 100px;
+        /* Adjust button width */
+        font-size: 12px;
+        /* Smaller font size */
+    }
+
+    .header nav ul li {
+        margin-bottom: 10px;
+        /* Space between items in the nav */
+    }
+}
+
+/* For Mobile Phones (max-width: 768px) */
+@media (max-width: 768px) {
+    .header {
+        height: 70px;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .header nav ul {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btns {
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 15px;
+    }
+
+    .btns button {
+        width: 90px;
+        /* Adjust button width for smaller screens */
+        font-size: 12px;
+    }
+
+    .header .icon {
+        margin-bottom: 20px;
+    }
+}
+
+/* For Mobile Phones (max-width: 480px) */
+@media (max-width: 480px) {
+    .header {
+        height: 60px;
+    }
+
+    .header nav ul {
+        width: 100%;
+        padding: 0;
+    }
+
+    .btns {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .btns button {
+        width: 80%;
+        /* Button takes most of the screen width */
+        margin-bottom: 10px;
+        /* Space between buttons */
+    }
+
+    .header nav ul {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header .icon {
+        margin-bottom: 10px;
+    }
+
+    nav a {
+        font-size: 16px;
+        /* Smaller font size for smaller screens */
+    }
+}
+
+.first h1 {
+    margin-top: 20px;
+    font-size: 36px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
-  }
-  
-  .product-list {
+    text-decoration: underline;
+}
+
+.product-list {
+    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-  }
-  
-  .product-card {
-    border: 1px solid #ddd;
+    background-color: #efe4cf;
+}
+
+.product-card {
+    border: 5px solid #242121;
     padding: 20px;
     margin: 10px;
     width: 200px;
     text-align: center;
     border-radius: 10px;
-  }
-  
-  .product-card img {
+    background-color: rgb(243, 239, 239);
+}
+
+.product-card img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
-  }
-  
-  h2 {
+}
+
+h2 {
     color: #ff6347;
-  }
-  
-  h3 {
+}
+
+h3 {
     font-size: 18px;
     margin: 10px 0;
-  }
-  
+}

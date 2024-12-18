@@ -11,6 +11,7 @@ function First() {
       .then((data) => {
         setProducts(data.products);
         setLoading(false);
+        console.log(data);
       })
       .catch((error) => {
         setError(error);
@@ -22,14 +23,15 @@ function First() {
   if (error) return <h2>Error fetching data: {error.message}</h2>;
 
   return (
-    <div className="App">
+    <div className="first">
       <h1>Product List</h1>
       <div className="product-list">
         {products.map((product) => (
           <div key={product.id} className="product-card">
-            <img src={product.image} alt={product.name} width="100" />
-            <h3>{product.name}</h3>
-            <p>{product.description}</p>
+            <img src={product.images[0]} alt={product.image} width="100" />
+            <h3>{product.brand}</h3>
+            <h3>{product.category}</h3>
+            {/* <p>{product.description}</p> */}
             <p><strong>Price: </strong>${product.price}</p>
           </div>
         ))}
