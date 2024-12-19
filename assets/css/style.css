@@ -198,6 +198,7 @@ nav a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #efe4cf;
 }
 
@@ -224,4 +225,17 @@ h2 {
 h3 {
     font-size: 18px;
     margin: 10px 0;
+}
+.product-list p strong{
+    font-size: 18px;
+}
+.product-list button{
+    height: 35px;
+    width: 110px;
+    margin-top: 10px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff6347;
+    cursor: pointer;
 }

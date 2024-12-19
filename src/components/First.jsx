@@ -30,11 +30,12 @@ function First() {
           <div key={product.id} className="product-card">
             <img src={product.images[0]} alt={product.image} width="100" />
             <h3>{product.brand}</h3>
-            <h3>{product.category}</h3>
+            {/* <h3>{product.category}</h3> */}
             {/* <p>{product.description}</p> */}
             <p>
               <strong>Price: </strong>${product.price}
             </p>
+            <button>Add to card</button>
           </div>
         ))}
       </div>
