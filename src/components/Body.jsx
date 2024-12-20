@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-function First() {
+function body() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -23,7 +23,7 @@ function First() {
   if (error) return <h2>Error fetching data: {error.message}</h2>;
 
   return (
-    <div className="first">
+    <div className="body">
       <h1>Product List</h1>
       <div className="product-list">
         {products.map((product) => (
@@ -43,4 +43,4 @@ function First() {
   );
 }
 
-export default First;
+export default body;

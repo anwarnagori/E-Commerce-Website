@@ -184,7 +184,7 @@ nav a {
     }
 }
 
-.first h1 {
+.body h1 {
     margin-top: 20px;
     font-size: 42px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -226,10 +226,12 @@ h3 {
     font-size: 18px;
     margin: 10px 0;
 }
-.product-list p strong{
+
+.product-list p strong {
     font-size: 18px;
 }
-.product-list button{
+
+.product-list button {
     height: 35px;
     width: 110px;
     margin-top: 10px;
@@ -238,4 +240,120 @@ h3 {
     border-radius: 10px;
     background-color: #ff6347;
     cursor: pointer;
+}
+
+/* Footer.css */
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 60px 0;
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+
+.footer-top {
+    border-bottom: 2px solid #f39c12;
+    padding-bottom: 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin-right: 20px;
+}
+
+.footer-section:last-child {
+    margin-right: 0;
+}
+
+.footer-heading {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-text {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.footer-link:hover {
+    color: #f39c12;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.newsletter-input {
+    padding: 10px;
+    font-size: 16px;
+    width: 250px;
+    border: none;
+    border-radius: 4px;
+}
+
+.newsletter-button {
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.newsletter-button:hover {
+    background-color: #e67e22;
+}
+
+.footer-bottom {
+    background-color: #111;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-icons {
+    margin-bottom: 15px;
+}
+
+.social-icon {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px;
+}
+
+.social-icon:hover {
+    color: #f39c12;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    margin: 0;
 }
