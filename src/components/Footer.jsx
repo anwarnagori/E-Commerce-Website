@@ -1,13 +1,10 @@
-// Footer.js
 import React from "react";
-// import "./Footer.css"; // Importing CSS for styling
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-top">
         <div className="footer-container">
-          {/* About Us Section */}
           <div className="footer-section">
             <h3 className="footer-heading">About Us</h3>
             <p className="footer-text">
@@ -17,7 +14,6 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Quick Links Section */}
           <div className="footer-section">
             <h3 className="footer-heading">Quick Links</h3>
             <ul className="footer-links">
@@ -54,7 +50,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Info Section */}
           <div className="footer-section">
             <h3 className="footer-heading">Contact Information</h3>
             <p className="footer-text">Email: contact@mywebsite.com</p>
@@ -64,7 +59,6 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Newsletter Subscription Section */}
           <div className="footer-section">
             <h3 className="footer-heading">Subscribe to Our Newsletter</h3>
             <p className="footer-text">
@@ -84,7 +78,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Social Media and Footer Bottom */}
       <div className="footer-bottom">
         <div className="social-icons">
           <a href="https://facebook.com" className="social-icon">

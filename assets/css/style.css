@@ -5,7 +5,6 @@
     box-sizing: border-box;
 }
 
-/* Header */
 .header {
     height: 100px;
     display: flex;
@@ -69,7 +68,7 @@ nav a {
     width: 110px;
 }
 
-/* Body */
+
 .body h1 {
     margin-top: 20px;
     font-size: 42px;
@@ -126,7 +125,7 @@ h3 {
     cursor: pointer;
 }
 
-/* Footer */
+
 .footer {
     background-color: #222;
     color: #fff;
@@ -242,9 +241,9 @@ h3 {
     margin: 0;
 }
 
-/* Responsive Styles */
 
-/* Large Screen Devices (Desktop) */
+
+
 @media (max-width: 1200px) {
     .header nav ul {
         width: 80%;
@@ -271,7 +270,6 @@ h3 {
     }
 }
 
-/* Tablets (Medium Screens) */
 @media (max-width: 992px) {
     .header {
         flex-direction: column;
@@ -315,7 +313,6 @@ h3 {
     }
 }
 
-/* Mobile Devices (Small Screens) */
 @media (max-width: 768px) {
     .header nav ul {
         width: 100%;
@@ -360,7 +357,6 @@ h3 {
     }
 }
 
-/* Extra Small Devices (Mobile Portrait) */
 @media (max-width: 480px) {
     .header {
         flex-direction: column;
