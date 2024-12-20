@@ -2,9 +2,10 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/* Header styles */
+/* Header */
 .header {
     height: 100px;
     display: flex;
@@ -13,21 +14,19 @@
     background-color: #efe4cf;
     border-bottom: 3px solid #000000;
     flex-direction: row;
-    /* Default layout for larger screens */
+    justify-content: space-between;
+    padding: 0 20px;
 }
 
 .header .icon {
     margin-left: 10px;
-    margin-bottom: 30px;
 }
 
 .header nav {
-    margin: 0 auto;
+    margin: 0;
 }
 
-/* Navigation styling */
 .header nav ul {
-    width: 500px;
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
@@ -39,17 +38,12 @@ nav a {
     text-decoration: none;
 }
 
-/* Button Container styling */
 .btns {
-    height: 50px;
-    width: 225px;
-    margin-right: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* Individual Buttons */
 .btns button {
     height: 40px;
     width: 105px;
@@ -58,6 +52,7 @@ nav a {
     background-color: #fff;
     font-size: 14px;
     font-weight: bold;
+    transition: all 0.3s;
 }
 
 .btns .sign-in {
@@ -68,126 +63,16 @@ nav a {
     background-color: #f57373;
 }
 
-/* Hover effect */
 .btns button:hover {
     cursor: pointer;
     height: 45px;
     width: 110px;
 }
 
-/* MEDIA QUERIES for RESPONSIVENESS */
-
-/* For Tablets and Smaller Devices */
-@media (max-width: 1024px) {
-    .header {
-        height: 80px;
-        flex-direction: column;
-        /* Stack elements vertically */
-        justify-content: center;
-    }
-
-    .header nav ul {
-        width: 80%;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .btns {
-        width: 100%;
-        margin-right: 0;
-        justify-content: center;
-        margin-top: 10px;
-    }
-
-    .btns button {
-        width: 100px;
-        /* Adjust button width */
-        font-size: 12px;
-        /* Smaller font size */
-    }
-
-    .header nav ul li {
-        margin-bottom: 10px;
-        /* Space between items in the nav */
-    }
-}
-
-/* For Mobile Phones (max-width: 768px) */
-@media (max-width: 768px) {
-    .header {
-        height: 70px;
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    .header nav ul {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .btns {
-        width: 100%;
-        justify-content: space-around;
-        margin-top: 15px;
-    }
-
-    .btns button {
-        width: 90px;
-        /* Adjust button width for smaller screens */
-        font-size: 12px;
-    }
-
-    .header .icon {
-        margin-bottom: 20px;
-    }
-}
-
-/* For Mobile Phones (max-width: 480px) */
-@media (max-width: 480px) {
-    .header {
-        height: 60px;
-    }
-
-    .header nav ul {
-        width: 100%;
-        padding: 0;
-    }
-
-    .btns {
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
-        margin-top: 10px;
-    }
-
-    .btns button {
-        width: 80%;
-        /* Button takes most of the screen width */
-        margin-bottom: 10px;
-        /* Space between buttons */
-    }
-
-    .header nav ul {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .header .icon {
-        margin-bottom: 10px;
-    }
-
-    nav a {
-        font-size: 16px;
-        /* Smaller font size for smaller screens */
-    }
-}
-
+/* Body */
 .body h1 {
     margin-top: 20px;
     font-size: 42px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     text-decoration: underline;
 }
@@ -198,7 +83,6 @@ nav a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #efe4cf;
 }
 
@@ -206,7 +90,7 @@ nav a {
     border: 5px solid #242121;
     padding: 20px;
     margin: 10px;
-    width: 200px;
+    width: 250px;
     text-align: center;
     border-radius: 10px;
     background-color: rgb(243, 239, 239);
@@ -242,7 +126,7 @@ h3 {
     cursor: pointer;
 }
 
-/* Footer.css */
+/* Footer */
 .footer {
     background-color: #222;
     color: #fff;
@@ -356,4 +240,170 @@ h3 {
 .footer-bottom p {
     font-size: 14px;
     margin: 0;
+}
+
+/* Responsive Styles */
+
+/* Large Screen Devices (Desktop) */
+@media (max-width: 1200px) {
+    .header nav ul {
+        width: 80%;
+    }
+
+    .product-list {
+        padding: 20px;
+    }
+
+    .footer-container {
+        gap: 20px;
+    }
+
+    .footer-section {
+        flex: 1 1 45%;
+    }
+
+    .footer-heading {
+        font-size: 20px;
+    }
+
+    .footer-text {
+        font-size: 14px;
+    }
+}
+
+/* Tablets (Medium Screens) */
+@media (max-width: 992px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        height: auto;
+    }
+
+    .header nav ul {
+        width: 100%;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer-heading {
+        font-size: 18px;
+    }
+
+    .footer-text {
+        font-size: 16px;
+    }
+
+    .footer-links {
+        text-align: center;
+    }
+
+    .newsletter-form {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Mobile Devices (Small Screens) */
+@media (max-width: 768px) {
+    .header nav ul {
+        width: 100%;
+        justify-content: space-evenly;
+        padding: 0;
+    }
+
+    .product-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .footer-heading {
+        font-size: 16px;
+    }
+
+    .footer-text {
+        font-size: 14px;
+    }
+
+    .footer-link {
+        font-size: 14px;
+    }
+
+    .footer-bottom p {
+        font-size: 12px;
+    }
+
+    .newsletter-input {
+        width: 200px;
+    }
+}
+
+/* Extra Small Devices (Mobile Portrait) */
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-list {
+        padding: 10px;
+    }
+
+    .product-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer-heading {
+        font-size: 16px;
+    }
+
+    .footer-text {
+        font-size: 14px;
+    }
+
+    .footer-link {
+        font-size: 14px;
+    }
+
+    .footer-bottom p {
+        font-size: 12px;
+    }
 }
